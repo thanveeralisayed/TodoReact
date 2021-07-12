@@ -1,0 +1,30 @@
+.boxwrap {
+    width: 100%;
+}
+
+.boxwrap > input {
+  outline: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-style: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.boxwrap > button {
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: rgb(67, 207, 184);
+  cursor: pointer;
+}
+
+.boxwrap > button:hover {
+  background-color: rgba(64, 224, 208, 0.63);
+}
+
+

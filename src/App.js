@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import classes from './App.module.css'
+import {useState} from 'react'
+import Todobox from './Todobox'
+import Todolist from './Todolist'
+
 
 function App() {
+
+  const [toDos,setTodos] = useState([])
+
+  console.log(toDos)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.app}>
+      
+      <div className ={classes.Todobox}>
+            <Todobox toDos={toDos} setTodos={setTodos}/>
+      </div>
+
+      <div className={classes.Todolist}>
+            <Todolist toDos={toDos} />
+      </div>
+
+
     </div>
   );
 }
