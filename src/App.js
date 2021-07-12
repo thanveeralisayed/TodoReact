@@ -8,7 +8,7 @@ function App() {
 
   const [toDos,setTodos] = useState([])
 
-  console.log(toDos)
+  // console.log(toDos)
 
   return (
     <div className={classes.app}>
@@ -18,7 +18,7 @@ function App() {
       </div>
 
       <div className={classes.Todolist}>
-            <Todolist toDos={toDos} />
+            <Todolist setTodos={setTodos} toDos={toDos} />
       </div>
 
 
